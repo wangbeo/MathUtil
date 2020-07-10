@@ -5,7 +5,7 @@
  */
 
 package mathutil;
-
+import  static com.quang.util.MathUtil.computeFactorial;
 /**
  *
  * @author wangp
@@ -17,7 +17,7 @@ public class MathUtil {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("5!=" + MathUtil.computeFactorial(5));
+        System.out.println("5!=" + computeFactorial(5));
     }
     
 }

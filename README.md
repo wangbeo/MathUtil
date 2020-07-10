@@ -11,5 +11,5 @@ a part of Introduction to Software Engineering course at FPT University, HCMC Ca
 ## Connect me via
 1. [GitHub](https://www.github.com/wangbeo)
 2. [Facebook](https://www.facebook.com/Nguyen.Quang.1712)
-
-### © 2020 by WangBeo
+3. [Email](beowang@gmail.com)
+### © 2020 by WangBeo | FPT University HCMC Campus

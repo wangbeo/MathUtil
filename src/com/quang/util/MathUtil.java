@@ -17,6 +17,9 @@ public class MathUtil {
     // tuy thế 15! đã là to lắm, mình hạn chế chỉ tính 15! đỏ lại
     public static long computeFactorial(int n)
     {
+        // hàm sẽ ném về ngoại lệ nếu bạn đưa vào n cà chớn
+        if(n < 0 || n > 15)
+            throw new IllegalAccessError("Invalid argument. n must be >= 0 and <= 15");
         long result = 1;
         for( int i=1; i<=n; i++){
             result *=i;

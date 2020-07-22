@@ -15,16 +15,33 @@ package com.quang.util;
 public class MathUtil {
     // tinh n! = 1.2.3...n -> vì n! tăng kết quả rất nhanh, sẽ tràn kiểu int sớm, do int chỉ tối đa 2 tỷ 1, do đó xài long an toàn hơn
     // tuy thế 15! đã là to lắm, mình hạn chế chỉ tính 15! đỏ lại
-    public static long computeFactorial(int n)
+    public static long computeFactorial(int n) 
     {
         // hàm sẽ ném về ngoại lệ nếu bạn đưa vào n cà chớn
-        if(n < 0 || n > 15)
-            throw new IllegalAccessError("Invalid argument. n must be >= 0 and <= 15");
-        long result = 1;
-        for( int i=1; i<=n; i++){
-            result *=i;
-            
+        if(n < 0 || n > 15){
+            throw new IllegalArgumentException("Invalid argument. n must be >= 0 and <= 15");
+        }
+//        long result = 1;
+//        for( int i=1; i<=n; i++){
+//            result *=i;
+//            
+//    }
+//    return result;
+        //chơi đệ quy
+        if(n==0 || n== 1)
+            return 1;
+            // diểm dùng đệ quy
+                
+            // bắt đầu các lệnh ở đây
+            //đứa nào viết else bị trừ điểm
+            // vì else chỗ này mặc định
+            return n * computeFactorial(n-1);
+            // xong n! = n* (n-1)!
+                
     }
-    return result;
-    }
+    
+    // nhờ jenkins xác nhập code chỉnh sử ổn kh
+    // như ngày xưa hay kh
+    //Regression dc thực thi bởi jenkins tét lại những gì đã đc tesst
+    // de confirm chất luong sau khi thay đổi
 }
